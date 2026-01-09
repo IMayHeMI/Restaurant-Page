@@ -2,6 +2,31 @@ body {
     background-color: rgb(241, 202, 156);
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 3px double brown; 
+}
+
+nav button {
+    font-size: 1.7rem;
+    padding: 0.3rem;
+    background-color: wheat;
+    color: br;
+    border: 2px ridge brown;
+    border-radius: 10px 0px 10px 10px;
+}
+
+nav button:hover {
+    cursor: pointer;
+    border: 1px double brown;
+    background-color: rgb(241, 213, 161);
+}
+
 #content {
     width: 100%;
     height: 100%;
@@ -36,4 +61,22 @@ body {
     margin-top: 2rem;
     width: 65ch;
     font-size: 1.5rem;
+}
+
+.hoursSection {
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    border: 3px double brown;
+    border-radius: 10px;
+}
+
+.hoursSection .hoursHeader {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hoursSection p {
+    margin: 0;
+    font-size: 1.3rem;
 }

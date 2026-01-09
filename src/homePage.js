@@ -16,5 +16,26 @@ const description2 = document.createElement("div");
 description2.classList.add("description2");
 description2.innerHTML = "We have a free delivery within <strong>10km</strong> for <strong>$20+</strong> orders! Everything over this range will be charged <strong>$2 for 1 additional kilometer</strong>.";
 
-content.append(naming, homeImage, description1, description2);
+const hoursSection = document.createElement("div");
+hoursSection.classList.add("hoursSection");
+
+const hoursHeader = document.createElement("div");
+hoursHeader.classList.add("hoursHeader");
+hoursHeader.innerHTML = "—————— Work hours ——————"
+
+const sunday = document.createElement("p");
+sunday.classList.add("sunday");
+sunday.innerHTML = "Sunday: Closed";
+
+const weekdays = document.createElement("p");
+weekdays.classList.add("weekdays");
+weekdays.innerHTML = "Weekdays: 7am - 9pm";
+
+const saturday = document.createElement("p");
+saturday.classList.add("saturday");
+saturday.innerHTML = "Saturday: 8am - 3pm"; 
+
+hoursSection.append(hoursHeader, weekdays, saturday, sunday);
+
+content.append(naming, homeImage, description1, description2, hoursSection);
 };
