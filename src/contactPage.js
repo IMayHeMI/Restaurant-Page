@@ -24,5 +24,9 @@ export default function() {
     submitButton.id = "submitButton";
     submitButton.textContent = "Submit Review";
 
-    content.append(ordersPhoneNumber, supportPhoneNumber, contactEmail,reviewHeader, review);
+    submitButton.addEventListener("click", () => {
+        review.value = "";
+    })
+
+    content.append(ordersPhoneNumber, supportPhoneNumber, contactEmail,reviewHeader, review, submitButton);
 }
